@@ -11,8 +11,9 @@
         <% } %>
     </a>
     <!-- Date and Author -->
-    <p class="blog-post-meta">
-        <%= item.date.format(config.date_format) %>
+    <p class="meta mt-4">
+        Posted on  
+        <%= item.date.format('MMMM Do YYYY') %>
         <% if(item.author) { %>
         by <%- item.author %>
         <% } %>

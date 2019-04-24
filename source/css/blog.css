@@ -15,3 +15,8 @@ article.blog-item h3{
     font-weight: 300;
     font-size: 1.5rem;
 }
+article.blog-item .meta{
+    font-size: 18px;
+    font-style: italic;
+    color: #878d94;
+}
