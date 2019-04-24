@@ -1,0 +1,25 @@
+<article id="blog-page" class="py-5">
+    <div class="py-3">
+        <h1>
+            <%- item.title %>
+        </h1>
+        <p class="subtitle"><%- item.subtitle %></p>
+        <!-- Meta -->
+        <p class="meta">
+            Posted on
+            <%= item.date.format('MMMM Do YYYY') %>
+            <% if(item.author) { %>
+            by <%- item.author %>
+            <% } %>
+        </p>
+    </div>
+
+
+
+    <!-- Content -->
+    <%- item.content %>
+    <hr />
+    <!-- Tags and Categories links -->
+    <%- partial('article-tags', {item: item}) %>
+    <%- partial('article-categories', {item: item}) %>
+    </div>
