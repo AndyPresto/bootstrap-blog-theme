@@ -1,3 +1,11 @@
-<div class="col-12">
+<div class="row py-5">
+    <% page.posts.each(function(item){ %>
+    <div class="col-12">
+        <%- partial('_partial/article-excerpt', {item: item}) %>
+    </div>
+    <% }); %>
 
+    <div class="col-12 mt-4">
+        <%- partial('_partial/pagination') %>
+    </div>
 </div>

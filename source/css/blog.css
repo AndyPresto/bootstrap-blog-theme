@@ -1,0 +1,17 @@
+a{
+    color: #333;
+}
+
+a:hover{
+    color: #f94401;
+    transition: 0.3s;
+}
+
+article.blog-item{
+    background-color: #f7f7f7
+}
+
+article.blog-item h3{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
