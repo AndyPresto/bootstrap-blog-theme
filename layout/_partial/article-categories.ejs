@@ -2,11 +2,10 @@
 <%
         var categories = [];
         item.categories.forEach(function(category){
-            categories.push('<a href="' + config.root + category.path + '">' + category.name + '</a>');
+            categories.push('<a class="mr-2" href="' + config.root + category.path + '"><i class="fas fa-folder-open mr-1"></i>' + category.name + '</a>');
         });
     %>
-<div class="blog-categories-container">
-    <span><i class="fas fa-folder-open"></i></span>
+<span>
     <%- categories.join(' / ') %>
-</div>
+</span>
 <% } %>

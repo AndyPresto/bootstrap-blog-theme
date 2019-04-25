@@ -2,11 +2,10 @@
 <%
         var tags = [];
         item.tags.forEach(function(tag){
-            tags.push('<a href="' + config.root + tag.path + '">#' + tag.name + '</a>');
+            tags.push('<a class="mr-2" href="' + config.root + tag.path + '"><i class="fas fa-tag mr-1"></i>' + tag.name + '</a>');
         });
     %>
-<div class="blog-tags-container">
-    <span class="glyphicon glyphicon-tags"></span>
+<span>
     <%- tags.join(' ') %>
-</div>
+</span>
 <% } %>

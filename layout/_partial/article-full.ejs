@@ -19,7 +19,9 @@
     <!-- Content -->
     <%- item.content %>
     <hr />
-    <!-- Tags and Categories links -->
-    <%- partial('article-tags', {item: item}) %>
-    <%- partial('article-categories', {item: item}) %>
+    <div class="blog-meta">
+        <!-- Tags and Categories links -->
+        <%- partial('article-tags', {item: item}) %>
+        <%- partial('article-categories', {item: item}) %>
+    </div>
     </div>
