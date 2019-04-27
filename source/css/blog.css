@@ -4,7 +4,7 @@
 }
 
 main {
-    height: calc(100vh - 170px);
+    min-height: calc(100vh - 170px);
 }
 
 a {
@@ -57,4 +57,9 @@ article.blog-item .meta {
 p.subtitle {
     font-weight: 300;
     font-size: 1.5rem;
+}
+
+.archive-post{
+    background-color: #f7f7f7;
+    padding: 10px 25px 5px;
 }

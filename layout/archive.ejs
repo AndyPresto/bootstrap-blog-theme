@@ -1,0 +1,11 @@
+<div class="row py-5">
+    <% page.posts.each(function(item){ %>
+    <%- partial('_partial/article-archive', {item: item}) %>
+    <% }); %>
+    <%- partial('_partial/pagination') %>
+
+    <% page.posts.each(function(item){ %>
+    <%- partial('_partial/article-archive', {item: item}) %>
+    <% }); %>
+    <%- partial('_partial/pagination') %>
+</div>
