@@ -1,4 +1,4 @@
-# bootstrap-blog-theme
+# Bootstrap Blog Theme
 The bootstrap theme for my blog. 
 
 MIT licence, so feel free to use and modify.
