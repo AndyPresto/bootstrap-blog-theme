@@ -1,54 +1,60 @@
-:root{
+:root {
     --grey-light-text: #878d94;
+    --footer-height: 170px
 }
 
-a{
+main {
+    height: calc(100vh - 170px);
+}
+
+a {
     color: #333;
 }
 
-a:hover{
+a:hover {
     color: #f94401;
     transition: 0.3s;
 }
 
-#page-footer{
+#page-footer {
     box-shadow: 0px -2px 0px 0px #efefef;
     background-color: #e0e0e0;
+    min-height: var(--footer-height);
 }
 
-#page-footer a{
+#page-footer a {
     text-decoration: underline;
 }
 
-#page-footer p{
+#page-footer p {
     margin-bottom: 0.4rem;
 }
 
-article.blog-item{
+article.blog-item {
     background-color: #f7f7f7
 }
 
-article.blog-item h3{
+article.blog-item h3 {
     font-weight: 300;
     font-size: 1.5rem;
 }
 
-article.blog-item .meta{
+article.blog-item .meta {
     font-size: 18px;
     font-style: italic;
     color: var(--grey-light-text);
 }
 
-#blog-page{
+#blog-page {
     max-width: 750px;
     margin: 0px auto;
 }
 
-.blog-meta a{
+.blog-meta a {
     color: var(--grey-light-text);
 }
 
-p.subtitle{
+p.subtitle {
     font-weight: 300;
     font-size: 1.5rem;
 }
