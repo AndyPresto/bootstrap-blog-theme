@@ -20,14 +20,23 @@ a:hover {
     box-shadow: 0px -2px 0px 0px #efefef;
     background-color: #e0e0e0;
     min-height: var(--footer-height);
-}
-
-#page-footer a {
-    text-decoration: underline;
+    color: #fff;
 }
 
 #page-footer p {
     margin-bottom: 0.4rem;
+}
+
+#page-footer a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #d3eaff;
+}
+
+#page-footer a:hover{
+    border-bottom-color: transparent;
+    text-shadow: #fff 1px 0 3px;
+    transition: text-shadow 0.3s ease, border-bottom-color 0.3s ease;
 }
 
 article.blog-item {
