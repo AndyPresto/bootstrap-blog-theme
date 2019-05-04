@@ -45,11 +45,6 @@ article.blog-item .meta {
     color: var(--grey-light-text);
 }
 
-#blog-page {
-    max-width: 750px;
-    margin: 0px auto;
-}
-
 .blog-meta a {
     color: var(--grey-light-text);
 }
@@ -62,4 +57,57 @@ p.subtitle {
 .archive-post{
     background-color: #f7f7f7;
     padding: 10px 25px 5px;
+}
+
+#blog-page {
+    max-width: 750px;
+    margin: 0px auto;
+}
+
+#blog-page .highlight {
+    background: #2d2d2d;
+    margin: 0 -12px;
+    padding: 15px 12px 4px 12px;
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 1px 0;
+    overflow: auto;
+    color: #ccc;
+    line-height: 25.6px;
+    border-radius: 16px;
+    background: #333;
+    margin: 1px 10px 1px 10px;
+    border: 3px solid #eeeeee;
+}
+
+#blog-page .highlight figcaption {
+    font-size: 0.85em;
+    color: #999;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+
+#blog-page .highlight table {
+    margin: 0;
+    width: auto;
+}
+
+#blog-page .highlight td {
+    border: none;
+    padding: 0;
+}
+
+#blog-page .gutter pre {
+    text-align: right;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+#blog-page .gutter pre span::after {
+    content: ':'
+}
+
+#blog-page .code pre {
+    padding-right: 20px;
+    color: #ffffff;
 }
