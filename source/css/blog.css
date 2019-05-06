@@ -30,13 +30,20 @@ a:hover {
 #page-footer a {
     color: #fff;
     text-decoration: none;
-    border-bottom: 1px solid #d3eaff;
+    border-bottom: 1px dashed #d3eaff;
 }
 
 #page-footer a:hover{
     border-bottom-color: transparent;
     text-shadow: #fff 1px 0 3px;
     transition: text-shadow 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+#footer-icons a{
+    display: inline-block;
+    padding: 5px;
+    border-bottom: none;
+    font-size: 2rem;
 }
 
 article.blog-item {
