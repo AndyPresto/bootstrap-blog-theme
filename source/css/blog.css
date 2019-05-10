@@ -62,8 +62,7 @@ a {
 
 #page-footer a:hover {
     border-bottom-color: transparent;
-    text-shadow: var(--green-primary) 1px 0 3px;
-    transition: text-shadow 0.3s ease, border-bottom-color 0.3s ease;
+    transition: border-bottom-color 0.2s ease;
     color: var(--green-primary);
 }
 
