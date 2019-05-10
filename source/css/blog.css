@@ -1,6 +1,28 @@
 :root {
     --grey-light-text: #878d94;
+    --orange-primary: #f94401;
     --footer-height: 170px
+}
+
+@media (min-width: 1200px)
+{
+    .container {
+        max-width: 800px;
+    }
+}
+
+
+header > .navbar{
+    box-shadow: 0px 2px 0px 0px var(--orange-primary);
+}
+
+.bg-dark{
+    background-color: #1d1c1f;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand{
+    color: #ddd
 }
 
 main {
@@ -11,8 +33,13 @@ a {
     color: #333;
 }
 
+a:hover{
+    text-shadow: #fff 1px 0 3px;
+    transition: text-shadow 0.3s ease
+}
+
 a:hover {
-    color: #f94401;
+    color: var(--orange-primary);
     transition: 0.3s;
 }
 
@@ -20,7 +47,7 @@ a:hover {
     box-shadow: 0px -2px 0px 0px #efefef;
     background-color: #e0e0e0;
     min-height: var(--footer-height);
-    color: #fff;
+    color: #ddd;
 }
 
 #page-footer p {
@@ -28,15 +55,16 @@ a:hover {
 }
 
 #page-footer a {
-    color: #fff;
+    color: #ddd;
     text-decoration: none;
     border-bottom: 1px dashed #d3eaff;
 }
 
 #page-footer a:hover{
     border-bottom-color: transparent;
-    text-shadow: #fff 1px 0 3px;
+    text-shadow: #f94401 1px 0 3px;
     transition: text-shadow 0.3s ease, border-bottom-color 0.3s ease;
+    color: #f94401;
 }
 
 #footer-icons a{
