@@ -9,6 +9,14 @@
     .container {
         max-width: 800px;
     }
+
+    header .nav-item{
+        margin-left: 12px;
+    }
+
+    header .fa{
+        color: var(--orange-primary)
+    }
 }
 
 
