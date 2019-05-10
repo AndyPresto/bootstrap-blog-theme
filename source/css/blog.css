@@ -4,30 +4,34 @@
     --footer-height: 170px
 }
 
-#aboveHeader{
+#aboveHeader {
     background-color: var(--green-primary);
     min-height: 55px;
 }
 
-header > .navbar{
+#aboveHeader a span {
+    font-size: 30px;
+}
+
+#aboveHeader p {
+    color: #ddd;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+header>.navbar {
     box-shadow: 0px 2px 0px 0px var(--green-primary);
 }
 
-header a:hover{
+header a:hover {
     color: #fff;
 }
 
-.navbar-brand{
-    font-size: 30px;
-    padding-left: 15px;
-}
-
-.bg-dark{
+.bg-dark {
     background-color: #1d1c1f;
 }
 
-.navbar-dark .navbar-nav .nav-link,
-.navbar-brand{
+.navbar-dark .navbar-nav .nav-link, .navbar-brand {
     color: #ddd
 }
 
@@ -56,20 +60,19 @@ a {
     border-bottom: 1px dashed #d3eaff;
 }
 
-#page-footer a:hover{
+#page-footer a:hover {
     border-bottom-color: transparent;
     text-shadow: var(--green-primary) 1px 0 3px;
     transition: text-shadow 0.3s ease, border-bottom-color 0.3s ease;
     color: var(--green-primary);
 }
 
-#page-footer a:hover,
-main a:hover {
+#page-footer a:hover, main a:hover {
     color: var(--green-primary);
     transition: 0.3s;
 }
 
-#footer-icons a{
+#footer-icons a {
     display: inline-block;
     padding: 5px;
     border-bottom: none;
@@ -100,7 +103,7 @@ p.subtitle {
     font-size: 1.5rem;
 }
 
-.archive-post{
+.archive-post {
     background-color: #f7f7f7;
     padding: 10px 25px 5px;
 }
@@ -158,18 +161,14 @@ p.subtitle {
     color: #ffffff;
 }
 
-
-@media (min-width: 1200px)
-{
+@media (min-width: 1200px) {
     .container {
         max-width: 800px;
     }
-
-    header .nav-item{
+    header .nav-item {
         margin-left: 12px;
     }
-
-    header .fa{
+    header .fa {
         color: var(--green-primary)
     }
 }
