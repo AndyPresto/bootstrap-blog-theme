@@ -1,27 +1,25 @@
 :root {
     --grey-light-text: #878d94;
-    --orange-primary: #f94401;
+    --green-primary: #5d8061;
     --footer-height: 170px
 }
 
-@media (min-width: 1200px)
-{
-    .container {
-        max-width: 800px;
-    }
-
-    header .nav-item{
-        margin-left: 12px;
-    }
-
-    header .fa{
-        color: var(--orange-primary)
-    }
+#aboveHeader{
+    background-color: var(--green-primary);
+    min-height: 55px;
 }
 
-
 header > .navbar{
-    box-shadow: 0px 2px 0px 0px var(--orange-primary);
+    box-shadow: 0px 2px 0px 0px var(--green-primary);
+}
+
+header a:hover{
+    color: #fff;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    padding-left: 15px;
 }
 
 .bg-dark{
@@ -29,7 +27,7 @@ header > .navbar{
 }
 
 .navbar-dark .navbar-nav .nav-link,
-.navbar-dark .navbar-brand{
+.navbar-brand{
     color: #ddd
 }
 
@@ -39,16 +37,6 @@ main {
 
 a {
     color: #333;
-}
-
-a:hover{
-    text-shadow: #fff 1px 0 3px;
-    transition: text-shadow 0.3s ease
-}
-
-a:hover {
-    color: var(--orange-primary);
-    transition: 0.3s;
 }
 
 #page-footer {
@@ -70,9 +58,15 @@ a:hover {
 
 #page-footer a:hover{
     border-bottom-color: transparent;
-    text-shadow: #f94401 1px 0 3px;
+    text-shadow: var(--green-primary) 1px 0 3px;
     transition: text-shadow 0.3s ease, border-bottom-color 0.3s ease;
-    color: #f94401;
+    color: var(--green-primary);
+}
+
+#page-footer a:hover,
+main a:hover {
+    color: var(--green-primary);
+    transition: 0.3s;
 }
 
 #footer-icons a{
@@ -162,4 +156,20 @@ p.subtitle {
 #blog-page .code pre {
     padding-right: 20px;
     color: #ffffff;
+}
+
+
+@media (min-width: 1200px)
+{
+    .container {
+        max-width: 800px;
+    }
+
+    header .nav-item{
+        margin-left: 12px;
+    }
+
+    header .fa{
+        color: var(--green-primary)
+    }
 }
