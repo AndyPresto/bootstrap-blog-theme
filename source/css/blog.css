@@ -160,6 +160,23 @@ p.subtitle {
     color: #ffffff;
 }
 
+pre{
+    background: #ececec;
+    color: #696969;
+    box-shadow: 0px 0px 0px 1px #d0d0d0;
+}
+
+pre code{
+    padding: 30px;
+    display: block;
+    line-height: 18px;
+}
+}
+
+pre[rel]{
+    padding-top: 18px;
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 800px;
